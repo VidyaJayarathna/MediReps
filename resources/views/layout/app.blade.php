@@ -1,5 +1,5 @@
 <!DOCTYPE>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,12 +16,23 @@
     <!-- Navigation -->
   @include('inc.navebar')
     <!-- Messages -->
-  @include('inc.messages');
+<div style="margin-left:20px">
+  @include('inc.messages')
     <!-- Page Content -->
   @yield('content')
+</div>
 
-  <footer id="footer" class="text-center" >
-    <p>copyrigth 2018 &copy; Acme</p>
+
+  <footer class="py-3 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; MediRep Team</p>
+    </div>
   </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 </html>

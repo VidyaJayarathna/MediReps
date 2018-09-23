@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 use App\PatientModel;
 
@@ -25,15 +26,16 @@ class PatientController extends Controller
                 'patientAddress' => $request->input('address'),
                 'country' => $request->input('country'),
                 'dob' => $request->input('DOB'),
+                'sex' => $request->input('sex'),
                 'telephone1' => $request->input('telephone1'),
                 'telephone2' => $request->input('telephone2'),
-                'email' => $request->input('email'),
+                'email' => $request->input('email')
             );
 
             $this->PatientModel->addPatient($data);
             //session()->flash('alert-success', 'Hotel Added Successfully !');
             //return redirect(url('/admin/tour-list-hotel'));
-        
+
             return redirect('/');
       }
 

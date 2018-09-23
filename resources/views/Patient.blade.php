@@ -22,6 +22,10 @@
     <input type="text" name="country" class=" form-control col-md-6">
   </div>
   <div class="form-group row">
+    <label class="col-md-3"> Sex </label>
+    <input type="test" name="sex" class="form-control col-md-6">
+  </div>
+  <div class="form-group row">
     <label  class="col-md-3"> Date Of Birth </label>
     <input type="date" name="DOB" class=" form-control col-md-6">
   </div>

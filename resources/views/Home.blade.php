@@ -1,12 +1,6 @@
 @extends('layout.app')
 
 @section('content')
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-  </head>
-  <body>
-  
     <header>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -51,7 +45,7 @@
     <!-- Page Content -->
     <div class="container">
 
-      <h1 class="my-4">Welcome to Modern Business</h1>
+      <h1 class="my-4">Welcome to MediRep</h1>
 
       <!-- Marketing Icons Section -->
       <div class="row">
@@ -197,24 +191,7 @@
           <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
         </div>
       </div>
-
     </div>
-    <!-- /.container -->
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
-      </div>
-      <!-- /.container -->
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  </body>
-
-</html>
 
 @endsection
