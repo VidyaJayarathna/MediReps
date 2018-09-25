@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\TestingModel;
+use Illuminate\Support\Facades\Input;
 
 class TestingController extends Controller
 {
@@ -25,10 +26,19 @@ class TestingController extends Controller
     );
 
     $this->TestingModel->addTesting($data);
-    //session()->flash('alert-success', 'Hotel Added Successfully !');
-    //return redirect(url('/admin/tour-list-hotel'));
-
     return redirect('/');
 
+  }
+
+  public function search(){
+    $id = Input::get('sratchItem');
+    if($id != ""){
+      $testing= $this->TestingModel->searchTesting($id);
+      if(count($testing) > 0){
+       return view('Testing')->withDetails($testing)->withQuery($id);
+         //->with('details',$testing)
+      }return view('Testing')->withMessage("No Testing Found");
+    }
+    return "no data found";
   }
 }

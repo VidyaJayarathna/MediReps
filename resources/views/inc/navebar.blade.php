@@ -32,7 +32,7 @@
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
             <a class="dropdown-item" href="/Testing"> Testing </a>
-            <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
+            <a class="dropdown-item" href="/Diagnosis">Diagnosis</a>
             <a class="dropdown-item" href="blog-post.html">Blog Post</a>
           </div>
         </li>
@@ -42,7 +42,7 @@
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
             <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-            <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
+            <a class="dropdown-item" href="Patientblog">Patient Blog</a>
             <a class="dropdown-item" href="faq.html">FAQ</a>
             <a class="dropdown-item" href="404.html">404</a>
             <a class="dropdown-item" href="pricing.html">Pricing Table</a>
