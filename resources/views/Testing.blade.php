@@ -2,9 +2,11 @@
 
 @section('content')
 <h1> Testing </h1>
-<form class="form-inline my-2 my-lg-0" action="/Testing/search"  role="search">
+<form class="form-inline my-2 my-lg-0 " action="/Testing/search"  role="search">
+  <div >
     <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="sratchItem">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" align="right">Search</button>
+  </div>
 </form>
 
 <div class="container">
@@ -47,4 +49,5 @@
 
 {{Form::submit('Save', ['class'=> 'btn btn-primary'])}}
 {!! Form::close() !!}
+
 @endsection

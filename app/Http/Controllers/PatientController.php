@@ -17,13 +17,18 @@ class PatientController extends Controller
   public function save (Request $request) {
             $this->validate($request, [
               'pationCode' => 'required',
-              'pationName' => 'required'
+              'firstName' => 'required'
             ]);
 
             $data = array(
                 'patientCode' => $request->input('pationCode'),
-                'patientName' => $request->input('pationName'),
-                'patientAddress' => $request->input('address'),
+                'firstName' => $request->input('firstName'),
+                'lastName' => $request->input('lastName'),
+                'addLine1' => $request->input('addLine1'),
+                'addLine2' => $request->input('addLine2'),
+                'addLine3' => $request->input('addLine3'),
+                'city' => $request->input('city'),
+                'addLine3' => $request->input('district'),
                 'country' => $request->input('country'),
                 'dob' => $request->input('DOB'),
                 'sex' => $request->input('sex'),

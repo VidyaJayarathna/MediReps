@@ -31,14 +31,20 @@ class TestingController extends Controller
   }
 
   public function search(){
+
     $id = Input::get('sratchItem');
-    if($id != ""){
+    //if($id != ""){
       $testing= $this->TestingModel->searchTesting($id);
-      if(count($testing) > 0){
-       return view('Testing')->withDetails($testing)->withQuery($id);
-         //->with('details',$testing)
-      }return view('Testing')->withMessage("No Testing Found");
-    }
-    return "no data found";
-  }
+      return view('Testing',
+            ['details'=> $testing
+            ]);
+    //   if(count($testing) > 0){
+    //    return view('Testing')->withDetails($testing)->withQuery($id);
+    //      //->with('details',$testing)
+    //   }return view('Testing')->withMessage("No Testing Found");
+    // }
+    // return "no data found";
+
+}
+
 }

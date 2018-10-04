@@ -32,6 +32,10 @@ Route::get('/Diagnosis', function(){
     return view('Diagnosis');
 });
 
+Route::get('/Login', function(){
+    return view('login');
+});
+
 Route::get('/Patientblog', function(){
     return view('PatientBlogs.PatientLayout.Patientapp');
 });
