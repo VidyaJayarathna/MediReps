@@ -5,8 +5,8 @@
 <div class="container">
 
       <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">Sidebar Page
-        <small>Subheading</small>
+      <h1 class="mt-4 mb-3"> Maduka Chamod
+      <!--  <small>Subheading</small> -->
       </h1>
 
       <ol class="breadcrumb">
@@ -21,7 +21,7 @@
         <!-- Sidebar Column -->
       @include('PatientBlogs.PatirntInc.PatientSidebar')
         <!-- Content Column -->
-      @yield('PatientBlogs.contentPatients')
+      @yield('contentPatients')
       </div>
       <!-- /.row -->
 

@@ -36,8 +36,25 @@ Route::get('/Login', function(){
     return view('login');
 });
 
+Route::get('/About', function(){
+    return view('About');
+});
+
+Route::get('/Contact', function(){
+    return view('Contact');
+});
+
+//patient blog
 Route::get('/Patientblog', function(){
-    return view('PatientBlogs.PatientLayout.Patientapp');
+    return view('PatientBlogs.PatientProfile');
+});
+
+Route::get('/PatientDiagnosis', function(){
+    return view('PatientBlogs.PatientDiagnosis');
+});
+
+Route::get('/PatientDocVisit', function(){
+    return view('PatientBlogs.PatientDocVisit');
 });
 
 //Route::get('/search', function(){

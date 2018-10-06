@@ -19,14 +19,14 @@
     <!-- Navigation -->
   @include('inc.navebar')
     <!-- Messages -->
-<div style="margin-left:20px">
+<div>
   @include('inc.messages')
     <!-- Page Content -->
   @yield('content')
 </div>
 
 
-  <footer class="py-3 bg-dark">
+  <footer class="py-3 bg-dark" >
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; MediRep Team</p>
     </div>
