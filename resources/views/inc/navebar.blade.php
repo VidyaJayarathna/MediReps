@@ -10,7 +10,7 @@
           <a class="nav-link" href="/About">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="/Services">Services</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/Contact">Contact</a>
@@ -33,23 +33,21 @@
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
             <a class="dropdown-item" href="/Testing"> Testing </a>
             <a class="dropdown-item" href="/Diagnosis">Diagnosis</a>
-            <a class="dropdown-item" href="blog-post.html">Blog Post</a>
+            <a class="dropdown-item" href="/Hospital">Hospital</a>
+            <a class="dropdown-item" href="/Specialised">Specialised Area</a>
           </div>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Other Pages
+            Blogs
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-            <a class="dropdown-item" href="full-width.html">Full Width Page</a>
             <a class="dropdown-item" href="Patientblog">Patient Blog</a>
-            <a class="dropdown-item" href="faq.html">FAQ</a>
-            <a class="dropdown-item" href="404.html">404</a>
-            <a class="dropdown-item" href="pricing.html">Pricing Table</a>
+            <a class="dropdown-item" href="Patientblog">Doctor Blog</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" onclick="document.getElementById('id01').style.display='block'" >About</a>
+          <a class="nav-link" onclick="document.getElementById('id01').style.display='block'" >Login</a>
         </li>
       </ul>
     </div>

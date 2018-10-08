@@ -1,24 +1,17 @@
 @extends('layout.app')
-@section('content')
-<h1> Patient Registation</h1>
 
-{!! Form::open(['url' => 'Patient/submit']) !!}
-<div>
-  <div style="margin-left:15vh; margin-right:15vh">
+@section('content')
+<h1> Hospital </h1>
+{!! Form::open(['url' => 'Hospital/submit']) !!}
+<div style="margin-left:15vh; margin-right:15vh">
+  <div style="margin-left:5px">
     <div class="form-group row">
-      <label class="col-md-4"> Patient Code </label>
-      <input type="text" name="pationCode" class=" form-control col-md-6">
-    </div>
-    <div class="form-group row"  style="margin-left:5px"><i><b>
-      <label > Patient Name </label></b></i>
-    </div>
-    <div class="form-group row">
-      <label class="col-md-4"> First Name </label>
-      <input type="text" name="firstName" class=" form-control col-md-6">
+      <label class="col-md-4"> Hospital Code </label>
+      <input type="text" name='diagnosisCode' class='form-control col-md-6'>
     </div>
     <div class="form-group row">
-      <label class="col-md-4"> Last Name </label>
-      <input type="text" name="lastName" class=" form-control col-md-6">
+      <label class="col-md-4"> Hospital Name </label>
+      <input type="text" name='diagnosisName' class='form-control col-md-6'>
     </div>
     <div class="form-group row"  style="margin-left:5px"><i><b>
       <label > Address </label></b></i>
@@ -48,34 +41,28 @@
     <input type="text" name="country" class=" form-control col-md-6">
   </div>
   <div class="form-group row">
-    <label class="col-md-4"> Sex </label>
-    <input type="radio" name="sex" value="male">   Male
-    <input type="radio" name="sex" value="female">   Female
-    <input type="radio" name="sex" value="other">   Other
-  </div>
-  <div class="form-group row">
-    <label  class="col-md-4"> Date Of Birth </label>
-    <input type="date" name="DOB" class=" form-control col-md-6">
-  </div>
-  <div class="form-group row">
     <label  class="col-md-4"> Contact Number 1</label>
     <input type="text" name="telephone1" class=" form-control col-md-6">
   </div>
   <div class="form-group row">
-    <label  class="col-md-4"> Contact Number 2</label>
-    <input type="text" name="telephone2" class=" form-control col-md-6">
+      <label  class="col-md-4"> Contact Number 2</label>
+      <input type="text" name="telephone2" class=" form-control col-md-6">
   </div>
   <div class="form-group row">
     <label class="col-md-4"> Email </label>
     <input type="text" name="email" class=" form-control col-md-6">
   </div>
-  <div class="form-group row">
-    <label class="col-md-4"> Profile Picture </label>
-    <input type="file" name="profPic" class="col-md-6">
+    <div class="form-group row">
+      <label class="col-md-4"> Sample Document </label>
+      <input type="file" name="Doc1" class="col-md-6">
+    </div>
+    <div class="form-group row">
+      <label class="col-md-4">Description</label>
+      <input type="text" name="description" class="form-control col-md-6">
+    </div>
   </div>
 </div>
-</div>
 
-  {{Form::submit('Save', ['class'=> 'btn btn-primary'])}}
+{{Form::submit('Save', ['class'=> 'btn btn-primary'])}}
 {!! Form::close() !!}
 @endsection

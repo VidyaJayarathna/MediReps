@@ -2,6 +2,7 @@
 
 @section('content')
 <h1> Testing </h1>
+<!--
 <form class="form-inline my-2 my-lg-0 " action="/Testing/search"  role="search">
   <div >
     <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="sratchItem">
@@ -32,16 +33,24 @@
 			<p>{{ $message }}</p>
 			@endif
   </div>
-</div>
+</div> -->
 {!! Form::open(['url' => 'Testing/submit']) !!}
-<div>
+<div style="margin-left:15vh; margin-right:15vh">
   <div style="margin-left:5vh">
     <div class="form-group row">
-      <label class="col-md-3"> Testing Code </label>
+      <label class="col-md-4"> Testing Code </label>
       <input type="text" name='testingCode' class='form-control col-md-6'>
     </div>
     <div class="form-group row">
-      <label class="col-md-3">Description</label>
+      <label class="col-md-4"> Cost </label>
+      <input type="text" name='testingCode' class='form-control col-md-6'>
+    </div>
+    <div class="form-group row">
+      <label class="col-md-4"> Sample Documrnt </label>
+      <input type="file" name="Doc1" class="col-md-6">
+    </div>
+    <div class="form-group row">
+      <label class="col-md-4">Description</label>
       <input type="text" name="description" class="form-control col-md-6">
     </div>
   </div>

@@ -32,7 +32,7 @@
 
   <!-- Contact Form -->
   <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-  <div class="row">
+  <div class="row" style="margin-left:15vh; margin-right:15vh">
     <div class="col-lg-8 mb-4">
       <h3>Send us a Message</h3>
       <form name="sentMessage" id="contactForm" novalidate>

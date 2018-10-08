@@ -2,8 +2,8 @@
 
 @section('contentPatients')
 <div class="col-lg-9 mb-4">
-    <h2>Patient Diagnosis</h2>
-    <p> this will show patient diagnosis history</p>
+    <h2>Doctor Visits</h2>
+    <p> this will show visit history</p>
 
 
 
@@ -13,9 +13,9 @@
          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
          <div class="card-body">
            <h4 class="card-title">
-             <a href="#">Diagnosis 1</a>
+             <a href="#">Visit 1</a>
            </h4>
-           <p class="card-text">Small Description about diagnosis</p>
+           <p class="card-text">Small Description about Visit</p>
          </div>
        </div>
      </div>
@@ -24,9 +24,9 @@
          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
          <div class="card-body">
            <h4 class="card-title">
-             <a href="#">Diagnosis 2</a>
+             <a href="#">Visit 2</a>
            </h4>
-           <p class="card-text">Small Description about diagnosis</p>
+           <p class="card-text">Small Description about Visit</p>
          </div>
        </div>
      </div>
@@ -35,9 +35,9 @@
          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
          <div class="card-body">
            <h4 class="card-title">
-             <a href="#">Diagnosis 3</a>
+             <a href="#">Visit 3</a>
            </h4>
-           <p class="card-text">Small Description about diagnosis</p>
+           <p class="card-text">Small Description about Visit</p>
          </div>
        </div>
      </div>
@@ -46,9 +46,9 @@
          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
          <div class="card-body">
            <h4 class="card-title">
-             <a href="#">Diagnosis 4</a>
+             <a href="#">Visit 4</a>
            </h4>
-           <p class="card-text">Small Description about diagnosis</p>
+           <p class="card-text">Small Description about Visit</p>
          </div>
        </div>
      </div>
@@ -57,9 +57,9 @@
          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
          <div class="card-body">
            <h4 class="card-title">
-             <a href="#">Diagnosis 5</a>
+             <a href="#">Visit 5</a>
            </h4>
-           <p class="card-text">Small Description about diagnosis</p>
+           <p class="card-text">Small Description about Visit</p>
          </div>
        </div>
      </div>
@@ -68,9 +68,9 @@
          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
          <div class="card-body">
            <h4 class="card-title">
-             <a href="#">Diagnosis 6</a>
+             <a href="#">Visit 6</a>
            </h4>
-           <p class="card-text">Small Description about diagnosis</p>
+           <p class="card-text">Small Description about Visit</p>
          </div>
        </div>
      </div>
@@ -79,9 +79,9 @@
          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
          <div class="card-body">
            <h4 class="card-title">
-             <a href="#">Diagnosis 7</a>
+             <a href="#">Visit 7</a>
            </h4>
-           <p class="card-text">Small Description about diagnosis</p>
+           <p class="card-text">Small Description about Visit</p>
          </div>
        </div>
      </div>
@@ -90,9 +90,9 @@
          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
          <div class="card-body">
            <h4 class="card-title">
-             <a href="#">Diagnosis 8</a>
+             <a href="#">Visit 8</a>
            </h4>
-           <p class="card-text">Small Description about diagnosis</p>
+           <p class="card-text">Small Description about Visit</p>
          </div>
        </div>
      </div>
