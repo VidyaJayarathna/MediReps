@@ -1,5 +1,6 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
+
     <a class="navbar-brand" href="/">MediRep</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -20,7 +21,7 @@
             Registations
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-            <a class="dropdown-item" href="/Patient"> Pation Registation </a>
+            <a class="dropdown-item" href="/Patient"> Patient Registation </a>
             <a class="dropdown-item" href="/Doctor"> Doctor Registation </a>
             <a class="dropdown-item" href="/Branch"> Branch Registation </a>
             <a class="dropdown-item" href="/Admin"> Admin Registation </a>

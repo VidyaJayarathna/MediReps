@@ -9,7 +9,7 @@ Route::get('/', function () {
 });
 
 Route::get('/Patient', function () {
-    return view('Patient');
+    return view('Patient', ['saveupdate'=> 'Save']);
 });
 
 Route::get('/Doctor', function () {
@@ -106,8 +106,8 @@ Route::get('/RequestForDoctor', function(){
 //});
 
 Route::get('/Testing/search','TestingController@search');
-
 Route::post('/Patient/submit','PatientController@save');
+Route::post('/Patient/Login','PatientController@login');
 Route::post('/Doctor/submit','DoctorController@save');
 Route::post('/Branch/submit','BranchController@save');
 Route::post('/Admin/submit','AdminController@save');

@@ -34,7 +34,8 @@ class PatientController extends Controller
                 'sex' => $request->input('sex'),
                 'telephone1' => $request->input('telephone1'),
                 'telephone2' => $request->input('telephone2'),
-                'email' => $request->input('email')
+                'email' => $request->input('email'),
+                'password' => '123'
             );
 
             $this->PatientModel->addPatient($data);
@@ -67,7 +68,11 @@ class PatientController extends Controller
                 return redirect('/');
         }
 
-
+//public function login(){
+//      $myusername = "P005"
+//       $mypassword = "123";
+//       PatientModel-> loginPatient($myusername,$mypassword);
+//}
 
 
 

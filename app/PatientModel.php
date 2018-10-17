@@ -19,4 +19,10 @@ class PatientModel extends Model
             ->update($data);
 }
 
+  public function loginPatient ($myusername,$mypassword){
+    $users = DB::table('patient')->select('patientCode')
+        ->where('patientCode', '=', $myusername)
+        ->where('password', '=', $mypassword)
+        ->get();
+  }
 }

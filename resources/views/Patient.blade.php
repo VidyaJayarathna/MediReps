@@ -6,6 +6,7 @@
 <div>
   <div style="margin-left:15vh; margin-right:15vh">
     <div class="form-group row">
+
       <label class="col-md-4"> Patient Code </label>
       <input type="text" name="pationCode" class=" form-control col-md-6">
     </div>
@@ -51,7 +52,6 @@
     <label class="col-md-4"> Sex </label>
     <input type="radio" name="sex" value="male">   Male
     <input type="radio" name="sex" value="female">   Female
-    <input type="radio" name="sex" value="other">   Other
   </div>
   <div class="form-group row">
     <label  class="col-md-4"> Date Of Birth </label>
@@ -76,6 +76,8 @@
 </div>
 </div>
 
-  {{Form::submit('Save', ['class'=> 'btn btn-primary'])}}
+
+<button type="submit" class="btn btn-primary">{{$saveupdate}}</button>
+
 {!! Form::close() !!}
 @endsection
