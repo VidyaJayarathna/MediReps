@@ -20,20 +20,9 @@
       <label class="col-md-4"> Last Name </label>
       <input type="text" name="lastName" class=" form-control col-md-6">
     </div>
-    <div class="form-group row"  style="margin-left:5px"><i><b>
-      <label > Address </label></b></i>
-    </div>
     <div class="form-group row">
-      <label  class="col-md-4"> Line 1 </label>
-      <input type="textarea" name="addLine1" class=" form-control col-md-6">
-    </div>
-    <div class="form-group row">
-      <label  class="col-md-4"> Line 2 </label>
-      <input type="textarea" name="addLine2" class=" form-control col-md-6">
-    </div>
-    <div class="form-group row">
-      <label  class="col-md-4"> Line 3 </label>
-      <input type="textarea" name="addLine3" class=" form-control col-md-6">
+      <label  class="col-md-4"> Address </label>
+      <textarea  name="address" class=" form-control col-md-6"></textarea>
     </div>
     <div class="form-group row">
       <label  class="col-md-4"> City </label>

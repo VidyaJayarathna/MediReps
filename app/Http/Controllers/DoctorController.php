@@ -22,7 +22,7 @@ class DoctorController extends Controller
     $data = array(
       'doctorCode' => $request->input('doctorCode'),
       'doctorName' => $request->input('doctorName'),
-      'doctorAddress' => $request->input('address'),
+      'address' => $request->input('address'),
       'country' => $request->input('country'),
       'specialisted' => $request->input('specialisted'),
       'sex' => $request->input('sex'),

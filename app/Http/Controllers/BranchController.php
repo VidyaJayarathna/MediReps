@@ -23,7 +23,14 @@ class BranchController extends Controller
       $data = array(
         'branchCode' => $request->input('branchCode'),
         'branchName' => $request->input('branchName'),
-        'branchDes' => $request->input('description')
+        'branchAddress' => $request->input('branchAddress'),
+        'city' => $request->input('city'),
+        'district' => $request->input('district'),
+        'country' => $request->input('country'),
+        'branchDes' => $request->input('description'),
+        'telephone1' => $request->input('telephone1'),
+        'telephone2' => $request->input('telephone2'),
+        'email' => $request->input('email')
       );
 
       $this->BranchModel->addBranch($data);
