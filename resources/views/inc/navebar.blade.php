@@ -44,7 +44,7 @@
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
             <a class="dropdown-item" href="Patientblog">Patient Blog</a>
-            <a class="dropdown-item" href="Patientblog">Doctor Blog</a>
+            <a class="dropdown-item" href="Doctorblog">Doctor Blog</a>
           </div>
         </li>
         <li class="nav-item">

@@ -90,6 +90,14 @@ Route::get('/RequestForDoctor', function(){
 });
 
 
+//#########################################################################################################################
+//patient blog
+Route::get('/Doctorblog', function(){
+    return view('DoctorBlogs.DoctorProfile');
+});
+
+
+
 //Route::get('/search', function(){
 //    if($q != ""){
 //        $testing = DB::table('testing')
