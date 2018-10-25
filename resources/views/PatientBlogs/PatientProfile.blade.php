@@ -3,12 +3,16 @@
 @section('contentPatients')
 <div class="col-lg-9 mb-4">
   <h2>Patient Profile</h2>
+  {!! Form::open(['url' => 'Patient/update']) !!}
 
   <div>
       @include('PatientBlogs.Common.PatientPro')
   </div>
 
-  <input type="button" value="Update" class="btnlog col-md-2">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, et temporibus, facere perferendis veniam beatae non debitis, numquam blanditiis necessitatibus vel mollitia dolorum laudantium, voluptate dolores iure maxime ducimus fugit.</p>
+<button type="submit" class="btn btn-primary">update</button>
+
+{!! Form::close() !!}
+
+  <p></p>
 </div>
 @endsection

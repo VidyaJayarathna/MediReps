@@ -16,17 +16,17 @@ class PatientController extends Controller
     // save the Patient data
   public function save (Request $request) {
             $this->validate($request, [
-              'pationCode' => 'required',
+              'patientCode' => 'required',
               'firstName' => 'required'
             ]);
 
             $data = array(
-                'patientCode' => $request->input('pationCode'),
+                'patientCode' => $request->input('patientCode'),
                 'firstName' => $request->input('firstName'),
                 'lastName' => $request->input('lastName'),
                 'address' => $request->input('address'),
                 'city' => $request->input('city'),
-                'addLine3' => $request->input('district'),
+                'district' => $request->input('district'),
                 'country' => $request->input('country'),
                 'dob' => $request->input('DOB'),
                 'sex' => $request->input('sex'),
@@ -46,21 +46,26 @@ class PatientController extends Controller
 
         // update the Patient data
   public function update (Request $request) {
+
                 $this->validate($request, [
-                  'pationCode' => 'required'
+                  'patientCode' => 'required'
                 ]);
 
                 $data = array(
-                    'patientName' => $request->input('pationName'),
-                    'patientAddress' => $request->input('address'),
-                    'country' => $request->input('country'),
-                    'dob' => $request->input('DOB'),
-                    'telephone1' => $request->input('telephone1'),
-                    'telephone2' => $request->input('telephone2'),
-                    'email' => $request->input('email'),
+                  'firstName' => $request->input('firstName'),
+                  'lastName' => $request->input('lastName'),
+                  'address' => $request->input('address'),
+                  'city' => $request->input('city'),
+                  'district' => $request->input('district'),
+                  'country' => $request->input('country'),
+                  'dob' => $request->input('DOB'),
+                  'sex' => $request->input('sex'),
+                  'telephone1' => $request->input('telephone1'),
+                  'telephone2' => $request->input('telephone2'),
+                  'email' => $request->input('email')
                 );
 
-                $this->PatientModel->updatePatient($data,$request->input('pationCode'));
+                $this->PatientModel->updatePatient($data,$request->input('patientCode'));
                 //session()->flash('alert-success', 'Hotel Added Successfully !');
                 //return redirect(url('/admin/tour-list-hotel'));
                 return redirect('/');

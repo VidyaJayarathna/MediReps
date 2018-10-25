@@ -45,11 +45,13 @@
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
             <a class="dropdown-item" href="Patientblog">Patient Blog</a>
             <a class="dropdown-item" href="Doctorblog">Doctor Blog</a>
+              <a class="dropdown-item" href="popupform">Doctor Blog</a>
           </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" onclick="document.getElementById('id01').style.display='block'" >Login</a>
         </li>
+
       </ul>
     </div>
   </div>

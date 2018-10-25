@@ -1,7 +1,7 @@
 <div>
   <div class="form-group row">
   <label class="col-md-4"> Patient Code </label>
-  <input type="text" name="pationCode" class=" form-control col-md-6">
+  <input type="text" name="patientCode" class=" form-control col-md-6">
 </div>
 <div class="form-group row"  style="margin-left:5px"><i><b>
   <label > Patient Name </label></b></i>

@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Input;
 use App\TestingModel;
 use Illuminate\Support\Facades\DB;
 
+//#########################################################################################################################
+// page call
+
 Route::get('/', function () {
     return view('Home');
 });
@@ -34,6 +37,10 @@ Route::get('/Diagnosis', function(){
 
 Route::get('/Login', function(){
     return view('login');
+});
+
+Route::get('/popupform', function(){
+    return view('Test.popupform');
 });
 
 Route::get('/About', function(){
@@ -91,13 +98,14 @@ Route::get('/RequestForDoctor', function(){
 
 
 //#########################################################################################################################
-//patient blog
+//Doctor blog
 Route::get('/Doctorblog', function(){
     return view('DoctorBlogs.DoctorProfile');
 });
+//#########################################################################################################################
 
-
-
+//#########################################################################################################################
+//controllers
 //Route::get('/search', function(){
 //    if($q != ""){
 //        $testing = DB::table('testing')
@@ -123,5 +131,5 @@ Route::post('/Testing/submit','TestingController@save');
 Route::post('/Diagnosis/submit','DiagnosisController@save');
 Route::post('upload/store','UserController@store');
 
-
+Route::post('/Patient/update','PatientController@update');
 //Route::post('/Patient/submit','PatientController@update');
