@@ -71,11 +71,12 @@ class PatientController extends Controller
                 return redirect('/');
         }
 
-//public function login(){
-//      $myusername = "P005"
-//       $mypassword = "123";
-//       PatientModel-> loginPatient($myusername,$mypassword);
-//}
+public function login(){
+     $myusername = "P005";
+      $mypassword = "123";
+        //return redirect('/');
+      $this->PatientModel-> loginPatient($myusername,$mypassword);
+}
 
 
 

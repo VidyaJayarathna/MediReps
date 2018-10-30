@@ -18,6 +18,6 @@
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
-      <button type="button" submit="Patient/Login" class=" btnlog cancelbtn">Cancel</button>
+      <button type="button"  class=" btnlog cancelbtn">Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>

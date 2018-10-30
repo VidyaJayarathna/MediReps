@@ -20,9 +20,15 @@ class PatientModel extends Model
 }
 
   public function loginPatient ($myusername,$mypassword){
-    $users = DB::table('patient')->select('patientCode')
+    $users = DB::table('patient')->select('patientCode','firstName')
         ->where('patientCode', '=', $myusername)
         ->where('password', '=', $mypassword)
-        ->get();
+        ->first();
+
+        if($users!=null){
+      echo $users -> patientCode;
+}else{
+  echo "cgf";
+}
   }
 }
