@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\DiagnosisModel;
+use Illuminate\Support\Facades\Input;
 
 class DiagnosisController extends Controller
 {
@@ -29,4 +30,15 @@ class DiagnosisController extends Controller
     return redirect('/');
 
   }
+
+    public function search(){
+
+        $id = Input::get('sratchItem');
+        //if($id != ""){
+        $testing= $this->DiagnosisModel->searchDiagnosis($id);
+        return view('Diagnosis',
+            ['details'=> $testing
+            ]);
+
+    }
 }

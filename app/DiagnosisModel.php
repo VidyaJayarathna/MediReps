@@ -11,4 +11,10 @@ class DiagnosisModel extends Model
     $id=DB::table('diagnosis')
           ->insert($data);
   }
+    public function searchDiagnosis($id){
+        return DB::table('diagnosis')
+            ->where('diagnosisCode', 'LIKE','%' . $id . '%')
+            ->orWhere('diagnosisDes', 'LIKE', '%' . $id . '%')
+            ->get();
+    }
 }

@@ -31,15 +31,12 @@ Route::get('/Admin', function(){
 //     return view('Testing');
 // });
 
-Route::get('/Testing','TestingController@search'
-// function(){
-//     return view('Testing');
-//}
-);
+Route::get('/Testing','TestingController@search');
 
-Route::get('/Diagnosis', function(){
-    return view('Diagnosis');
-});
+//Route::get('/Diagnosis', function(){
+//    return view('Diagnosis');
+//});
+Route::get('/Diagnosis','DiagnosisController@search');
 
 Route::get('/Login', function(){
     return view('login');
@@ -128,6 +125,7 @@ Route::get('/Doctorblog', function(){
 //});
 
 Route::get('/Testing/search','TestingController@search');
+Route::get('/Diagnosis/search','DiagnosisController@search');
 Route::post('/Patient/submit','PatientController@save');
 Route::post('/Patient/Login','PatientController@login');
 Route::post('/Doctor/submit','DoctorController@save');

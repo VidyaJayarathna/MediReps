@@ -5,10 +5,7 @@
 
 <script>
 $( document ).ready(function() {
-
 });
-
-
 </script>
 
 <form class="form-inline my-2 my-lg-0 " action="/Testing/search"  role="search">
@@ -49,18 +46,19 @@ $( document ).ready(function() {
 <div id="id02" class="modal">
 <!-- <form class="modal-content animate" action="Patient/Login"> -->
 
-    <div>
+    <div class="container" style="background-color:#fdffb9; ">
+        <div  style="margin-top:15vh;">
       {!! Form::open(['url' => 'Testing/submit']) !!}
       <div class="imgcontainer">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <img src="dp.jpg" alt="Avatar" class="avatar">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <h3 style="text-align: left; color: #00b525">Add new Testing</h3>
       </div>
 
       <div class="container">
 
       <div style="margin-left:15vh; margin-right:15vh">
-        <div style="margin-left:5vh">
-          <div class="form-group row">
+        <div style="margin-left:5vh; " >
+          <div class="form-group row" >
             <label class="col-md-4"> Testing Code </label>
             <input type="text" name='testingCode' class='form-control col-md-6'>
           </div>
@@ -78,11 +76,13 @@ $( document ).ready(function() {
           </div>
         </div>
       </div>
+      </div>
     </div>
-      {{Form::submit('Save', ['class'=> 'btn btn-primary'])}}
-      <button type="button"  class=" btnlog cancelbtn">Cancel</button>
+      {{Form::submit('Save', ['class'=> 'btn btn-primary container'])}}
+      <button type="button"  class=" btnlog cancelbtn ">Cancel</button>
       {!! Form::close() !!}
     </div>
+
 
 </div>
 
