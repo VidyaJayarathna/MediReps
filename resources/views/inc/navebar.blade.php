@@ -60,10 +60,11 @@
 <div id="id01" class="modal">
 <!-- <form class="modal-content animate" action="Patient/Login"> -->
       {!! Form::open(['url' => 'Patient/Login']) !!}
-    <div>
-        @include('login')
-    </div>
-
+      <div class="container">
+        <div   style="background-color:#fdffb9; ">
+          @include('login')
+        </div>
+      </div>
 {!! Form::close() !!}
 </div>
 

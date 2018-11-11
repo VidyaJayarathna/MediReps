@@ -5,12 +5,14 @@
     </div>
 
     <div class="container">
+      <div>
       <label for="uname"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="username" required>
-
+    </div>
+    <div>
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="password" required>
-
+    </div>
       <button type="submit" class='btnlog'>Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me

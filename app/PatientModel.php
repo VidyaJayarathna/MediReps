@@ -25,10 +25,11 @@ class PatientModel extends Model
         ->where('password', '=', $mypassword)
         ->first();
 
-        if($users!=null){
-      echo $users -> patientCode;
-}else{
-  echo "cgf";
-}
+
+       if($users!=null){
+         // echo $users -> patientCode;
+         return $users -> patientCode;
+       }
+         return "";
   }
 }

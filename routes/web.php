@@ -27,9 +27,15 @@ Route::get('/Admin', function(){
     return view('Admin');
 });
 
-Route::get('/Testing', function(){
-    return view('Testing');
-});
+// Route::get('/Testing', function(){
+//     return view('Testing');
+// });
+
+Route::get('/Testing','TestingController@search'
+// function(){
+//     return view('Testing');
+//}
+);
 
 Route::get('/Diagnosis', function(){
     return view('Diagnosis');

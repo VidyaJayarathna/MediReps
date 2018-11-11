@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\PatientModel;
+use Session;
 
 class PatientController extends Controller
 {
@@ -71,11 +72,22 @@ class PatientController extends Controller
                 return redirect('/');
         }
 
-public function login(){
-     $myusername = "P005";
-      $mypassword = "123";
-        //return redirect('/');
-      $this->PatientModel-> loginPatient($myusername,$mypassword);
+public function login(Request $request){
+      $myusername =  $request->input('username');
+      $mypassword =  $request->input('password');
+
+      $users = $this->PatientModel-> loginPatient($myusername,$mypassword);
+
+      if($users!=null){
+        echo '<script type="text/javascript">alert("Please Enter Correct Details!");</script>';
+        //Session::flash('alert-success', 'success');
+        //echo "Welcome $users" ;
+          return redirect('/');
+
+      }else{
+        echo "Password or User name not match";
+        session()->flash('alert-success', 'Password or User name not match');
+      }
 }
 
 
