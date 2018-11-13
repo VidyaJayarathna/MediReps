@@ -26,7 +26,7 @@ class TestingController extends Controller
     );
 
     $this->TestingModel->addTesting($data);
-    return redirect('/');
+    return redirect('/Testing');
 
   }
 

@@ -27,7 +27,7 @@ class DiagnosisController extends Controller
     );
 
     $this->DiagnosisModel->addDiagnosis($data);
-    return redirect('/');
+    return redirect('/Diagnosis');
 
   }
 

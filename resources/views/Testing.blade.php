@@ -77,13 +77,13 @@ $( document ).ready(function() {
         </div>
       </div>
       </div>
-    </div>
+
       {{Form::submit('Save', ['class'=> 'btn btn-primary container'])}}
       <button type="button"  class=" btnlog cancelbtn ">Cancel</button>
       {!! Form::close() !!}
     </div>
 
-
+    </div>
 </div>
 
 

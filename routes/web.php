@@ -61,10 +61,12 @@ Route::get('/Services', function(){
 Route::get('/Hospital', function(){
     return view('Hospital');
 });
+//Route::get('/Hospital','HospitalController@search');
 
-Route::get('/Specialised', function(){
-    return view('Specialised');
-});
+//Route::get('/Specialised', function(){
+//    return view('Specialised');
+//});
+Route::get('/Specialised','SpecialisedController@search');
 
 Route::get('/upload', function(){
     return view('upload');
@@ -123,7 +125,7 @@ Route::get('/Doctorblog', function(){
 //    }
 //    return "no data found";
 //});
-
+Route::get('/Specialised/search','SpecialisedController@search');
 Route::get('/Testing/search','TestingController@search');
 Route::get('/Diagnosis/search','DiagnosisController@search');
 Route::post('/Patient/submit','PatientController@save');
